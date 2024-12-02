@@ -18,6 +18,8 @@ export function CreateLoginAction(role: string, redirectPath: string) {
       async function SignIn(email: string, password: string) {
         if(email.toLowerCase() === 'nando' && password === '123') {
           return true;
+        } else if(email.toLowerCase() === 'vinicius' && password === 'vps5251491') {
+          return true;
         } else {
           return false;
         }
